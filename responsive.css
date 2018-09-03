@@ -1,0 +1,208 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li {
+    flex-basis: 33%;
+    max-width: 33%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.listcart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.subsection-grid {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .shopcontent,
+    .shopimage img {
+        width: 320px;
+    }
+
+    .firstsection,
+    .secondsection {
+        width: 320px;
+    }
+
+    main {
+        font-size: 12px;
+    }
+
+    .list img {
+        width: 50%;
+    }
+
+    .list li {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown:hover .dropdowncontent {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mensouterwearlist img {
+        display: none;
+    }
+
+    .grid div,
+    .grid span {
+        font-size: 13px;
+    }
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+    .shopcontent,
+    .shopimage img,
+    .mycart {
+        width: 350px;
+        margin: auto;
+    }
+
+    .firstsection,
+    .secondsection {
+        width: 350px;
+    }
+
+    .subsection-grid {
+        margin: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shopimage img {
+        padding: 10px 10px;
+    }
+
+    .addtocart,
+    .submitbox,
+    .checkout {
+        display: none;
+    }
+
+    .footdetail,
+    .cartfoot,
+    .checkoutfoot {
+        display: none;
+    }
+
+    .subsection-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .submitbox {
+        display: none;
+    }
+
+    .addcartmobile {
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .addtocartmobile {
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(23, 44, 80);
+        border: 0;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 20px 0;
+        text-transform: uppercase;
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    .yourcart h1 {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+
+    .listcart img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .yourcart h1 {
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    .yourcart span {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:425px)
+{
+    .frame{
+        padding: 0;
+    }
+    .name a{
+        margin: 0px 40px 0 40px;
+    }
+    .quantity{
+        order:3;
+    }
+    .deletebutton{
+        order:2;
+    }
+    .size{
+        order:4;
+    }
+    .pricea{
+        order: 5;
+    }
+}
+@media screen and (max-width: 320px) {
+
+    .shopcontent,
+    .shopimage img,
+    .mycart {
+        width: 280px;
+        margin: auto;
+    }
+
+    .firstsection,
+    .secondsection {
+        width: 280px;
+    }
+    .name a{
+        margin: 0;
+    }
+
+}

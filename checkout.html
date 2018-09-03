@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout-SHOP</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="images\shoppingcart.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="mainheader">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img class="leftimg" src="images/menu.png">
+                    <div class="dropdowncontent">
+                        <a href="list.html">Men's Outerwear</a>
+                        <a href="#">Ladies Outerwear</a>
+                        <a href="#">Men's T-shirts</a>
+                        <a href="#">Ladies T-Shirts</a>
+                    </div>
+                </button>
+            </div>
+            <h1><a href="main.html">Shop</a></h1>
+            <a href="cart.html"><img class="rightimg" src="images/cart.png"></a>
+        </div>
+    </header>
+    <div class="maincheckout">
+        <header class="yourcart">
+            <h1>Checkout</h1>
+            <span>Shop is a demo app-form data will not be sent</span>
+        </header>
+        <form method="Post">
+            <section class="checkcontent"></section>
+            <div class="subsection-grid">
+                <section class="firstsection">
+                    <h2 class="accountInfoHeading">Account Information</h2>
+                    <div class="rowinput-row">
+                        <input type="email" class="accountemail" name="accountemail" placeholder="Email" autofocus
+                            required>
+                    </div>
+                    <div class="rowinput-row">
+                        <input type="tel" class="accountPhone" name="accountPhone" placeholder="Phone Number" required>
+                    </div>
+                    <h2 class="shipAddressHeading">Shipping Address</h2>
+                    <div class="row input-row">
+                        <input type="text" class="shipAddress" name="shipAddress" placeholder="Address" required>
+                    </div>
+                    <div class="rowinput-row">
+                        <input type="text" class="shipCity" name="shipCity" placeholder="City" required>
+                    </div>
+                    <div class="rowinput-row">
+                        <div class="state">
+                            <input type="text" class="shipState" name="shipState" placeholder="State/Province" required>
+                            <input type="text" class="shipZip" name="shipZip" placeholder="Zip/Postal Code" required>
+                        </div>
+                    </div>
+                    <div class="colunm">
+                        <label class="shop-select-label">Country</label>
+                        <select class="shipcountry" name="shipcountry" required>
+                            <option value="US" selected>United States
+                            </option>
+                            <option value="CA">Canada</option>
+                        </select>
+                    </div>
+                    <h2 class="billingaddressheading">Billing Address</h2>
+                    <div class="billing-address-picker">
+                        <input type="checkbox" class="setbilling" name="setbilling" value="on">
+                        <label for="setbilling">Use different billing address</label>
+                    </div>
+                </section>
+                <section class="secondsection">
+                    <h2>Payment Method</h2>
+                    <div class="rowinput-row">
+                        <input type="text" class="ccName" name="ccName" placeholder="Cardholder Name" required
+                            autocomplete="cc-name">
+                    </div>
+                    <div class="rowinput-row">
+                        <input type="tel" class="ccNumber" name="ccNumber" placeholder="Card Number" required
+                            autocomplete="cc-number">
+                    </div>
+                    <div class="rowinput-row">
+                        <label for="ccExpMonth">Expiry</label>
+                        <div class="column">
+                            <select class="ccExpMonth" name="ccExpMonth" required autocomplete="cc-exp-month">
+                                <option value="01" selected>Jan</option>
+                                <option value="02">Feb</option>
+                                <option value="03">Mar</option>
+                                <option value="04">Apr</option>
+                                <option value="05">May</option>
+                                <option value="06">Jun</option>
+                                <option value="07">Jul</option>
+                                <option value="08">Aug</option>
+                                <option value="09">Sep</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dec</option>
+                            </select>
+                            <select class="ccExpYear" name="ccExpYear" required autocomplete="cc-exp-year">
+                                <option value="2016" selected>2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                            </select>
+                            <input type="tel" class="ccCVV" name="ccCVV" placeholder="CVV" required autocomplete="cc-csc">
+                        </div>
+                    </div>
+                    <h2>Order Summary</h2>
+                    <div class="roworder-summary-row">
+                        <div class="flex">Anvil L/s Crew Neck - Grey</div>
+                        <div>$22.15</div>
+                    </div>
+                    <div class="rowtotal-row">
+                        <div class="flex">Total</div>
+                        <div>$22.15</div>
+                    </div>
+                    <div class="submitbox">
+                        <a class="button" href="#">Place Order</a>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+    <div class="addcartmobile">
+        <a class="addtocartmobile" href="#">Place order</a>
+    </div>
+    <footer class="checkoutfoot">
+        <section class="foot">
+            <a href="#">Made by Polymer</a>
+            <div class="demo-label">Demo only</div>
+        </section>
+    </footer>
+</body>
+
+</html>

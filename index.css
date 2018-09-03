@@ -1,0 +1,563 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    margin: auto;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+header,
+nav,
+footer,
+section,
+article,
+div {
+    box-sizing: border-box;
+}
+
+.mainheader {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropbtn {
+    width: 56px;
+    height: 54px;
+    background-color: white;
+    border: 0;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+    height: 1000px;
+}
+
+.dropdowncontent a {
+    color: black;
+    padding: 12px 16px;
+    min-width: 250px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin: 10px 0 10px 0;
+}
+
+.leftimg {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+.arrow {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+.mainheader h1 {
+    font-size: 16px;
+    padding: 16px 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: auto;
+}
+
+header h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.rightimg {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin: 16px 25px 16px 0px;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    padding: 9px 10px;
+}
+
+.nav ul a:hover {
+    background-color: rgb(223, 217, 217);
+    border-bottom: solid 2px black;
+}
+
+.nav a.selected:after,
+nav a:hover:after {
+    border-bottom: solid 2px black;
+}
+
+ul {
+    list-style: none;
+}
+
+.mensouterwear {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mensouterwear img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.ladiesouterwear {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home {
+    text-align: center;
+}
+
+.home a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.home h2 {
+    margin: 30px 0px;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.ladiesouterwear img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.tshirts {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.tshirts a {
+    padding: 8px 24px;
+}
+
+.menstshirts {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.menstshirts img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.ladiestshirts {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.ladiestshirts img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.narrow {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: white;
+    padding: 20px 20px;
+}
+
+.button {
+    box-sizing: border-box;
+    border: 2px solid black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 44px 8px 44px;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.foot {
+    clear: both;
+    text-align: center;
+    font-size: 14px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.demo-label {
+    box-sizing: border-box;
+    width: 120px;
+    padding: 6px 6px 6px 6px;
+    margin: 8px auto 0px auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mensouterwear span {
+    color: grey;
+}
+
+.grid {
+    padding: 0px 0px 40px 0px;
+    margin: 0;
+}
+
+.grid div {
+    text-align: center;
+    font-size: 14px;
+}
+
+.grid img {
+    margin: 32px 0 16px;
+}
+
+.grid a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.grid span {
+    color: grey;
+}
+
+.shopimage img {
+    padding: 64px 32px;
+    object-fit: contain;
+}
+
+.addcart a {
+    text-decoration: none;
+    color: black;
+}
+
+.description {
+    margin: 32px 0px;
+}
+
+.features {
+    margin: 32px 0px;
+}
+
+.features ul {
+    list-style-type: disc;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-right: 40px;
+    padding-top: 1em;
+}
+
+.shopcontent {
+    margin: 64px 32px;
+    width: 400px;
+}
+
+.shopcontent h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+}
+
+.price {
+    margin: 16px 0px 20px;
+    font-size: 16px;
+    color: grey;
+}
+
+.shopselect>select {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 24px 12px 70px;
+    border: 0;
+    display: inline-block;
+}
+
+.yourcart {
+    text-align: center;
+}
+
+.yourcart h1 {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+}
+.mycart{
+    display: flex;
+    flex-wrap: wrap;
+}
+.yourcart span {
+    color: grey;
+}
+
+.name a {
+    text-decoration: none;
+    color: black;
+}
+
+.quantity select {
+    width: 100%;
+    font-size: 16px;
+    padding: 0px;
+    border: 0;
+    display: inline-block;
+}
+ 
+.listcart img{
+   width: 75px;
+   height: 75px;
+} 
+
+.deletebutton {
+    border: 0;
+    background-color: white;
+    padding: 8px;
+}
+
+.checkout {
+    font-size: 14px;
+    border: 2px solid #000;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+    background-color: white;
+    padding: 8px 30px 8px 30px;
+}
+
+.checkoutbox span {
+    padding: 0px 14px;
+}
+
+.checkoutbox a {
+    text-decoration: none;
+    color: black;
+}
+
+.checkoutbox {
+    align-self: flex-end;
+    font-size: 14px;
+}
+
+.quantity {
+    margin-left: 10px;
+}
+
+.selectoption {
+    width: 40px;
+}
+
+.size {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pricea {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.subsection-grid {
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+
+.subsection-grid h2 {
+    font-size: 13px;
+    margin: 0.84em 0em;
+    font-weight: bold;
+}
+
+.subsection-grid input {
+    font-size: 1em;
+    font-weight: 300;
+    border: none;
+    padding: 8px 0px;
+    width: 100%;
+    outline: none;
+    font: 13.33px arial;
+    border-bottom: solid 1px lightgray;
+}
+
+.subsection-grid select {
+    width: 100%;
+    padding: 8px 24px 8px 0px;
+    font-size: 1em;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px lightgray;
+}
+
+.subsection-grid input::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: lightgrey;
+}
+
+.billing-address-picker {
+    display: flex;
+    margin: 28px 0;
+    height: 20px;
+}
+
+.billing-address-picker label {
+    margin-left: 12px;
+}
+
+.billing-address-picker input {
+    width: auto;
+    display: flex;
+}
+
+.column {
+    margin: 10px 0px;
+    display: flex;
+}
+
+.state {
+    display: flex;
+}
+
+.roworder-summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.rowtotal-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.rowinput-row {
+    margin: 8px 0px;
+}
+
+.rowinput-row input {
+    margin: 20px 0px;
+}
+
+.column input {
+    margin: initial;
+}
+
+.submitbox {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.submitbox a {
+    text-decoration: none;
+    color: black;
+}
+
+.maincheckout {
+    padding: 32px 0px;
+}
+
+.mensouterwearlist {
+    font-weight: 400;
+    text-align: center;
+}
+
+.mensouterwearlist header h2 {
+    margin: 32px 0px 5px 0px;
+    font-size: 16px;
+}
+
+.mensouterwearlist img {
+    width: 100%;
+    height: 100%;
+}
+
+.firstsection,
+.secondsection {
+    width: 400px;
+}
+.addcartmobile {
+    display: none;
+}
+.frame{
+    display: block;
+    position: relative;
+    padding-top:  100px;
+    padding-bottom: 64px;
+    min-height: 100vh;
+
+}
+.main-frame{
+    margin: 0 auto;
+    padding: 0 24px 48px 24px;
+    max-width: 900px;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.listcart{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.quantity{
+    display: flex;
+}
